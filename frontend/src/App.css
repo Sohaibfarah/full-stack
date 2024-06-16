@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.head {
+    background-color: #dddddd;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.head .nav {
+    display: flex;
+    width: 70%;
+    padding: 4px;
+    border-right: 1px solid #dadada;
+}
+.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.nav li {
+    display: flex;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav i {
+    color: #00ff4c;
+    font-size: large;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.sin {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: #00ff4c;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-size: small;
+}
+.sin:hover {
+    filter:grayscale(.4);
+    color: #fff;
+}
+i {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .head {
+        padding: 5px;
+        background-color: #ace2bc;
+    }
+    .head .nav {
+        padding: 0;
+    }
+    .nav a {
+        font-size: small;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-weight: 100;
+        padding: 0;
+    }
+    .nav i {
+        font-size: small;
+        padding: 0;
+    }
+    .sin {
+        width: max-content;
+        height: 30px;
+        margin: 0;
+    }
+    i {
+        font-size: small;
+    }
+}
